@@ -166,7 +166,7 @@ function handleDragEnd(event:any){
   async function sendCircuit() {
     console.log("Circuit:")
     console.log(JSON.stringify(circuit));
-    const response = await axios.post('http://localhost:8000/simulate',
+    const response = await axios.post('https://b-sc-quantum-computer-simulator-dwes.vercel.app/simulate',
         {circuit_matrix: circuit})
   .then(function(response: any){
     console.log("statelist")
